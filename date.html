@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+   <div class="my-div">hello world</div>
+
+
+    <script>
+        let myDate = new Date();
+        console.log(myDate);
+        console.log(myDate.getTime());
+        console.log(myDate.getFullYear());
+        console.log(myDate.getDay());
+        console.log(myDate.getHours());
+        console.log(myDate.getMinutes());
+          
+        let button = document.createElement('button');
+        button.innerText = 'Click me';
+        document.querySelector('.my-div').appendChild(button);
+        document.querySelector('.my-div').removeChild(button);
+    </script>
+</body>
+</html>

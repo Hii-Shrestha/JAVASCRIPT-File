@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+//      let product = {
+//           company: 'Mongo',
+//          price: 432,
+//          item_name: 'T-shirt',
+//        };
+//      console.log(product);
+//       console.log(product.company);
+//           console.log(product.item_name);
+//     console.log(product.price);
+
+//    console.log(product['item_name']);//bracket se bhi hoga
+//       delete product.company;
+//       console.log(product);
+      
+    // let product ={
+    //     company:'Mango',
+    //     price: 453,
+    //     item_name: 'T-shirt',
+    //     ratng:{
+    //         stars: 4.5,
+    //         noOfReview: 43,
+    //     },
+    //     displayPrice: function(){
+    //         console.log(`Price of the product is ₹${this.price}`)
+    //     }
+    //  };
+
+    //  product.displayPrice();
+     
+     let a =3;
+     let b=a;
+     console.log(`a=${a}, b=${b}`);
+     a=8;
+     console.log(`a=${a}, b=${b}`);
+
+     let x = {num: 5};
+     let y = x;
+     console.log(`x=${x.num}, y=${y.num}`);
+     x.num = 8;
+     console.log(`x=${x.num}, y=${y.num}`);
+
+     let p = {pop: 'fnu'};
+     let q = {pop: 'fnu'};
+     console.log(p === q);
+
+     let product={
+        company: 'Mango',
+        price: 435,
+        item_name: 'T-shirt',
+     };
+    
+     let {price} = product;
+     console.log(price);
+
+    </script>
+</body>
+</html>

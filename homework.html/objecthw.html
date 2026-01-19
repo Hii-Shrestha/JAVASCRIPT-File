@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+    <script>
+        // let product={
+        //     company: 'Mango',
+        //     price:4355,
+        //     item_name: 'Skirt',
+        //     'delivery-time': 'same day delivery',
+        // };
+        // console.log(product);
+        // console.log(product.company);
+        // let copyProduct = product;
+        // console.log(product);
+        // copyProduct.price = 542;
+        // console.log(product);
+        // copyProduct.item_name = 'T-shirt';
+        // console.log(product);
+        // console.log(product['delivery-time']);
+
+        // let obj ={
+        //     message: 'good job',
+        //     status: 'complete',
+        // };
+        // console.log(obj);
+        // let {message, status} = obj;
+        // console.log(message);
+        // console.log(status);
+        let product1={
+            company:'Mango',
+            price:4355,
+            item_name: 'Skirt',
+            'delivery-time': 'same day delivery',
+        };
+        let product2={
+            company: 'HAppy',
+            item_name: 'top',
+            price:4355,
+        };
+
+        function isIdenticalProduct(product1, product2){
+            if (product1 == product2){
+                return true;
+            }
+            if(typeof product1 !== 'object' || typeof product !== 'object'){
+                console.warn('parameter pased was not an object');
+                return false;
+            }
+            if( product1.company === product2.company && product1.price === product2.price){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        console.log(isIdenticalProduct());
+ 
+    </script>
+</body>
+</html>
